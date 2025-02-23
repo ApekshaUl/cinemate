@@ -13,7 +13,7 @@ export const MovieDetail = ({title}) => {
         setData(json);
     }
     fetchMovies();
-  })
+  },[params.id]);
   useEffect(()=>
     {
       document.title = `${data.title}/Cinemate`;
